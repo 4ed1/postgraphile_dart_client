@@ -1,0 +1,8 @@
+name: postgraphile_dart
+
+environment:
+  sdk: '>=2.0.0 <3.0.0'
+
+dependencies:
+  http:
+  collection:
