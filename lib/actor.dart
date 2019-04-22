@@ -4,5 +4,8 @@ import 'package:postgraphile_dart/gql.dart';
 /// your postgraphile endpoint.
 abstract class Actor {
   String get jwt;
+  set jwt(String jwt);
+
   GQL get api;
+  set api(GQL api);
 }
