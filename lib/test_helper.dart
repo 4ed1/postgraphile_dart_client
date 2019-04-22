@@ -6,9 +6,9 @@ import 'dart:math';
 import 'package:meta/meta.dart';
 import 'package:test/test.dart';
 
-import 'package:postgraphile_dart/gql.dart';
-import 'package:postgraphile_dart/entity.dart';
-import 'package:postgraphile_dart/actor.dart';
+import 'package:postgraphile_dart_client/gql.dart';
+import 'package:postgraphile_dart_client/entity.dart';
+import 'package:postgraphile_dart_client/actor.dart';
 
 typedef EntityCreator = Future<Entity> Function(Entity, {Entity cleanupAfter});
 typedef CleanupMarker = Entity Function(Entity, {Entity after, bool unmark});
@@ -19,7 +19,7 @@ class BrokenGQL extends GQL {
   BrokenGQL() : super(null);
 
   @override
-  Future<dynamic> query(String jwt, String query, [Map<String,dynamic> variables = const {}]) async =>
+  Future<dynamic> query(String jwt, String query, [Map<String,dynamic> variables]) async =>
     throw Exception();
 }
 

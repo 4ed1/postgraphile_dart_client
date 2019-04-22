@@ -1,4 +1,4 @@
-import 'package:postgraphile_dart/gql.dart';
+import 'package:postgraphile_dart_client/gql.dart';
 
 /// An abstraction around whatever entity authorizes queries against
 /// your postgraphile endpoint.

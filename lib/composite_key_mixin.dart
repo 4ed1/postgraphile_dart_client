@@ -1,7 +1,7 @@
 import 'dart:async';
 
-import 'package:postgraphile_dart/actor.dart';
-import 'package:postgraphile_dart/entity.dart';
+import 'package:postgraphile_dart_client/actor.dart';
+import 'package:postgraphile_dart_client/entity.dart';
 
 import 'package:collection/collection.dart';
 

@@ -1,6 +1,6 @@
 import 'package:test/test.dart';
 
-import 'package:postgraphile_dart/test_helper.dart';
+import 'package:postgraphile_dart_client/test_helper.dart';
 
 import './models.dart';
 

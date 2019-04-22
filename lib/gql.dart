@@ -18,11 +18,11 @@ class GQL {
   /// NOTE: this function will throw errors more strictly than it should. As per the spec,
   ///       a GraphQL query may return both data and errors. When we map this to a future
   ///       we consider every reported error fatal and ignore the data.
-  Future<dynamic> query(String jwt, String query, [Map<String,dynamic> variables = const {}]) async {
+  Future<dynamic> query(String jwt, String query, [Map<String,dynamic> variables]) async {
     // print(query);
     final response = json.decode((await http.post(endpoint, body: json.encode({
       requestQuery: query,
-      requestVariables: variables
+      requestVariables: variables ?? const {}
     }), headers: headers(jwt))).body);
 
     // print(response);

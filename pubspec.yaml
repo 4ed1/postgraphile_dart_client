@@ -1,4 +1,4 @@
-name: postgraphile_dart
+name: postgraphile_dart_client
 
 environment:
   sdk: '>=2.0.0 <3.0.0'

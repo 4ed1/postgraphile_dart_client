@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'dart:convert';
 
-import 'package:postgraphile_dart/actor.dart';
+import 'package:postgraphile_dart_client/actor.dart';
 
 class NotFoundException implements Exception {}
 class AlreadyCreatedException implements Exception {}

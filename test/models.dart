@@ -1,7 +1,7 @@
-import 'package:postgraphile_dart/entity.dart';
-import 'package:postgraphile_dart/composite_key_mixin.dart';
-import 'package:postgraphile_dart/actor.dart';
-import 'package:postgraphile_dart/gql.dart';
+import 'package:postgraphile_dart_client/entity.dart';
+import 'package:postgraphile_dart_client/composite_key_mixin.dart';
+import 'package:postgraphile_dart_client/actor.dart';
+import 'package:postgraphile_dart_client/gql.dart';
 
 class UserModel extends EntityModel<User, int> {
   static const keyName = 'name';
